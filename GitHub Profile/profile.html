@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            .profile{
+                /* height: 400px; */
+                width: 300px;
+                background-color: rgb(0, 255, 76);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 10px;
+                text-align: center;
+            }
+            #img{
+              height: 120px;
+              width: 120px;
+              border-radius: 50%;
+              background: url('https://avatars.githubusercontent.com/u/29747452?v=4') no-repeat center;
+              background-size: contain;
+            }
+            .box{
+              display: flex;
+              gap: 30px ;
+            }
+            img{
+              height: 20px;
+
+            }
+            .sec{
+              display: flex;
+              align-items: center;
+              height: 30px;
+              gap: 5px;
+            }
+            #follow_btn{
+              background-color: skyblue;
+              padding: 10px 20px ;
+              border: 1px solid transparent;
+              cursor: pointer;
+            }
+            .profile h1, .profile h2 {
+              margin: 0px 0px 5px 0px ;
+            }
+
+      #more {
+        display: flex;
+        flex-direction: column;
+        width: 300px ;
+        align-items: center;
+        padding: 0px 10px;
+        opacity: 0;
+        background-color: plum;
+      }
+      #more_btn{
+        width: 320px;
+        padding: 10px;
+        background-color: pink;
+        cursor: pointer;
+        border: 2px solid black;
+      }
+      .show{
+        opacity: 1 !important;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121;">
+    <div class="profile">
+      <div id="img"></div>
+      <h1>Sanket Singh</h1>
+      <h2>Google</h2>
+      <div class="box">
+        <div class="sec">
+          <img src="./follow.png" alt="" />
+          <h3>2323</h3>
+        </div>
+        <div class="sec">
+          <img src="./following.png" alt="" />
+          <h3>23</h3>
+        </div>
+        <div class="sec">
+          <img src="./location.png" alt="" />
+          <h3>India</h3>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum
+        eos beatae.
+      </p>
+      <a href=""><button id="follow_btn">Follow on GitHub</button></a>
+    </div>
+    <button id="more_btn">See more</button>
+    <div id="more">
+      <div class="another_profile">
+        <p>login singhsanket143</p>
+        <p>login id 34324</p>
+        <p>Email</p>
+        <p>twitter_username</p>
+        <p>public_repos": 274</p>
+        <p>public_gists": 2</p>
+        <p>created_at": "2017-06-28T06:32:41Z",</p>
+        <p>"updated_at":"2023-06-24T18:58:01Z"</p>
+      </div>
+    </div>
+
+    <script>
+   
+      document.getElementById("more_btn").addEventListener("click", () => {
+        document.getElementById("more").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
